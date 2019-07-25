@@ -1,0 +1,52 @@
+<html>
+   <head>
+       <script>
+           function abc() {
+               alert("From abc() method");
+           }
+           function xyz() {
+               alert("From xyz() method");
+           }
+           function pqr() {
+               alert("From pqr() method");
+           }
+           function atoz() {
+               alert("From atoz() method");
+           }
+           function check() {
+               var chars = document.f1.t1.value.length;
+               var name = document.f1.t1.value;
+               console.log("NameEntered is: " + name);
+               console.log("No of characters are :" + chars);
+               if (chars < 5)
+                   return false;
+               else
+                   return true;
+           }
+       </script>
+   </head>
+   <body>
+       <h1>JavaScript demo</h1>
+       <hr>
+       <h3>Printing the statement 10 times</h3>
+       <h2>
+           <script>
+
+               for (i = 1; i <= 10; i++) {
+                   document.write("hello everyone<br>")
+               }
+           </script>
+
+       </h2>
+       <h3>Thanks</h3>
+       <form action="abc.html" name="f1" onsubmit="return check()" >
+           <input type="text" name="t1" required>
+           <input type="submit" name="t2" value="SUBMIT" >
+       </form>
+       <input type="button" name="t1" value="single click" onclick="abc()">
+       <!-- <input type="button" name="t1" onchange="alert('Enter Name')"> -->
+       <input type="button" name="t2" value="double click" ondblclick="xyz()">
+       <input type="button" name="t3" value="COME OVER" onmouseover="pqr()">
+       <input type="button" name="t4" value="COME OUT" onmouseout="atoz()">
+   </body>
+    </html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+
+</head>
+<body>
+    <script>
+        function mail() {
+            var mail = document.getElementById("i1").value;
+            var status = true;
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (mail.match(mailformat)) {
+                status = true;
+            }
+            else {
+                status = false;
+                alert("You have entered an invalid email address!");
+                document.getElementById("s1").innerText = "Enter valid email";
+
+            }
+            return status;
+        }
+        function check() {
+
+            if (document.getElementById("s1").innerText = "Enter valid email")
+                return false;
+            return true;
+        }
+    </script>
+    <form action="welcome.html" name="reg" onsubmit="check()">
+        Enter email :<input type="text" id="i1" onchange="return mail()" required>
+        <span id="s1" style="color:red"></span><br>
+        <input type="submit" name="b1" value="SUBMIT">
+        <input type="reset" name="b1" value="RESET">
+    </form>
+
+</body>
+</html>

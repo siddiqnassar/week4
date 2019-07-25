@@ -1,0 +1,12 @@
+package com.example.demo;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MyAppController {
+
+	public void someMethod()
+	{
+		System.out.println("You have accessed /abc url path");
+	}
+}

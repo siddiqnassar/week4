@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;spring-boot-demo/src/main/resources/demo.sql&apos; to &apos;data.sql&apos;" description="Rename resource &apos;demo.sql&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/demo.sql" name="data.sql" stamp="1563879241947" updateReferences="true"/>
+</session>

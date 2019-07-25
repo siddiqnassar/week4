@@ -1,0 +1,77 @@
+<html>
+<head>
+
+</head>
+<body>
+    <script>
+        function check(a,b) {
+            if (isNaN(a)) {
+                alert("it is not a number");
+                return false;
+            }
+            if (isNaN(b)) {
+                alert("type correct number");
+                return false;
+            }
+            return true;
+        }
+        function add() {
+            var a = document.getElementById("i1").value;
+            var b = document.getElementById("i2").value;
+            d = check(a, b);
+            if (d) {
+                a = parseInt(a);
+                b = parseInt(b);
+                c = parseInt(eval(a + b));
+                document.write("Addition is :" + c);
+            }
+        }
+        function sub() {
+            var a = document.getElementById("i1").value;
+            var b = document.getElementById("i2").value;
+            d = check(a, b);
+            if (d) {
+                a = parseInt(a);
+                b = parseInt(b);
+                c = parseInt(eval(a - b));
+                document.write("Subraction is :" + c);
+            }
+        }
+        function div() {
+            var a = document.getElementById("i1").value;
+            var b = document.getElementById("i2").value;
+            d = check(a, b);
+            if (d) {
+                a = parseInt(a);
+                b = parseInt(b);
+                c = parseInt(eval(a / b));
+                document.write("Division is :" + c);
+            }
+        }
+        function mul() {
+            var a = document.getElementById("i1").value;
+            var b = document.getElementById("i2").value;
+            d = check(a, b);
+            if (d) {
+                a = parseInt(a);
+                b = parseInt(b);
+                c = parseInt(eval(a * b));
+                document.write("Multiplication is :" + c);
+            }
+        }
+    </script>
+   
+        <form name="f1">
+            Enter First number: <input type="text" id="i1" required><br>
+            Enter Second Number:<input type="text" id="i2" required><br>
+        </form>
+   
+    <h1 align="centre">
+        <button onclick="add()">ADD</button>
+        <button onclick="sub()">Subract</button>
+        <button onclick="div()">Division</button>
+        <button onclick="mul()">Multiply</button>
+    </h1>
+       
+</body>
+</html>

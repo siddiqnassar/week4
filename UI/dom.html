@@ -1,0 +1,68 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+      <h1>Java Script Demo</h1>
+      <script src="demo.js"></script>
+      <script>
+          disp = true;
+          function abc() {
+              var res = confirm("Do you really want to close");
+              if (res)
+                  close();
+              else
+                  alert("You choose to continue");
+          }
+          function xyz() {
+              var tf = document.getElementById("mi");
+              //document.getElementById("t1").innerText = tf.value;
+              document.write("hii " + tf.value);
+          }
+          function atoz1() {
+
+              var login = "<form><h2>Username:<input type='text' name='t1'></h2></form>"
+              if (disp) {
+                  document.getElementById.("d1").innerHTML = login;
+                  document.getElementById.("p1").innerHTML = "hidelogin";
+
+              }
+          }
+          function atoz2() {
+
+              var login = "<form><h2>Username:<input type='text' name='t1'></h2></form>"
+              if (disp) {
+                  document.getElementById.("d1").innerHTML = login;
+                  document.getElementById.("p1").innerHTML = "hidelogin";
+
+              }
+              else {
+                  document.getElementById.("d1").innerHTML = "";
+                  document.getElementById.("p1").innerHTML = login;
+
+              }
+              disp = !disp;
+          }
+      </script>
+      <hr>
+      <script>
+          var a = 10;
+          a = "hello";
+          a = "false";
+          a = 1.5;
+          a = new Date();
+
+          document.write("<br>Type of a :" + typeof (a));
+      </script>
+      <br><br>
+      <input type="text" name="t1" id="mi">
+      <button onclick="xyz()">GREET</button>
+      <button onclick="abc()">EXIT</button> <br><br>
+      <h2>WELCOME!</h2>
+      <input type="button" name="b1" value="GREET" onclick="atoz1()"><hr>
+      <div id="d1"></div>
+      <p onclick="atoz2()" id="p1">SHOWLOGIN</p>
+  </body>
+
+
+</html>

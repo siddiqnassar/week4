@@ -1,0 +1,15 @@
+package com.example.demo;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MyAppController {
+
+	@RequestMapping("/abc")
+	public String someMethod()
+	{
+		System.out.println("You have accessed /abc url path");
+		return "demo.html";
+	}
+}

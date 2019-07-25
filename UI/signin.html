@@ -1,0 +1,60 @@
+<html>
+<head>
+
+</head>
+<body>
+    <script>
+        
+        function checkname() {
+            if (document.getElementById("i1").value.length < 8) {
+                document.getElementById("uer").innerText = "Enter 8 characters";
+            }
+            else
+                document.getElementById("uer").innerText = "";
+        }
+        function passlength() {
+           
+            if (document.getElementById("i2").value.length < 4 || document.getElementById("i2").value.length > 6) {
+
+                document.getElementById("pass1").innerText = "Password length 4 to 6";
+            }
+            else {
+                document.getElementById("pass1").innerText = "";
+            }
+          
+        }
+        function passcheck() {
+
+
+            if (document.getElementById("i2").value != document.getElementById("i3").value) {
+                document.getElementById("pass").innerText = "Password mismatch";
+
+            }
+            else
+                document.getElementById("pass").innerText = "";
+        }
+        function pas() {
+
+            if (document.getElementById("uer").innerText == "Enter 8 characters")
+                return false;
+            if (document.getElementById("pass").innerText == "Password mismatch")
+                return false;
+            return true;
+        }
+    </script>
+    <form action="register.html" name="f2" onsubmit="return pas()">
+        Enter username:<input type="text" id="i1" onkeyup="checkname()" required>
+        <span id="uer" style="color:red"></span><br>
+        Enter Password :<input type="password" id="i2" onkeyup="passlength()" required><br>
+        <span id="pass1" style="color:red"></span><br />
+        Reenter Password :<input type="password" id="i3" onkeyup="passcheck()" required><br />
+
+        <span id="pass" style="color:red"></span><br>
+
+        <input type="submit" name="h1" value="SUBMIT">
+        <input type="reset" name="h2" value="RESET">
+        <br />
+
+    </form>
+</body>
+</html>

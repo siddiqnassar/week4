@@ -1,0 +1,22 @@
+package com.example.demo;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class AnotherController {
+
+	@RequestMapping("/")
+	public String greet() {
+		return "login";
+	}
+	@RequestMapping("/verify")
+	public String verify(HttpServletRequest req)
+	{
+		String name=req.getParameter("pwd");
+		System.out.println("Name :" +name);
+		return "welcome";
+	}
+}

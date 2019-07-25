@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class StreamDemo {
+
+	public static void main(String args[])
+	 {
+		List<Integer> list=new ArrayList<Integer>();
+		list.add(34);
+		list.add(56);
+		list.add(33);
+		list.add(77);
+		list.add(88);
+		list.add(49);
+		
+		System.out.println(list);
+	 }
+	
+}

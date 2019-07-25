@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>UI demo</title>
+</head>
+
+<body>
+<h1>Just for demo</h1>
+<h3>Web project</h3>
+<hr colour="red">
+<h2>You have inserted line</h2>
+</body>
+</html>
