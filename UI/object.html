@@ -1,0 +1,46 @@
+<html>
+   <head>
+       <script>
+           function Emp(name, age, salary) {
+               this.name = name;
+               this.age = age;
+               this.salary = salary;
+           }
+       </script>
+   </head>
+   <body>
+       <h1>Customs object</h1>
+       <hr />
+       <script>
+           obj1 = new Object();
+           obj1.name = "Nassar";
+           obj1.age = 23;
+           obj1.salary = 50000;
+
+           document.write("Name: " + obj1.name);
+           document.write("<br><br> Age: " + obj1.age);
+           document.write("<br><br> Salary: " + obj1.salary);
+       </script>
+       <hr />
+       <script>
+           e1 = new Emp("Suraj", 30, 40000);
+           document.write("Name: " + e1.name);
+           document.write("<br><br> Age: " + e1.age);
+           document.write("<br><br> Salary: " + e1.salary);
+        </script>
+       <hr />
+       <script>
+           j1 = { 'name': 'shounak', 'age': 45, 'salary': 58000 };
+           document.write("Name: " + j1.name);
+           document.write("<br><br> Age: " + j1.age);
+           document.write("<br><br> Salary: " + j1.salary);
+       </script>
+       <hr />
+       <script>
+           document.write("<br>" + Math.PI);
+           document.write("<br>" + Math.E);
+           document.write("<br>" + Math.cbrt(27));
+           
+       </script>
+   </body>
+</html>
